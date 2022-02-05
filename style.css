@@ -1,0 +1,80 @@
+.game{
+    width: 700px;
+    height: 300px;
+    border-bottom: 1px solid tomato;
+    margin: auto;
+}
+
+.gameOver{
+    display: none;
+}
+
+h1{
+    position: relative;
+    left: 600px;
+    margin: 40px;
+}
+
+.sun{
+    width: 60px;
+    height: 60px;
+    background-image: url(image/sun.png);
+    background-size: 60px 60px;
+    position: relative;
+    left: 670px;
+    top: 10px;
+}
+
+.dino{
+    width: 50px;
+    height: 50px;
+    background-image: url(image/trex.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 240px;
+}
+
+.cactus{
+    width: 25px;
+    height: 40px;
+    background-image: url(image/cactus.png);
+    background-size: 25px 40px;
+    position: relative;
+    top:200px;
+    left: 680px;
+    animation: cactusGo 2s infinite linear;
+}
+
+@keyframes cactusGo {
+    0%{
+        left: 680px;
+    }
+    100%{
+        left: -20px;
+    }
+}
+
+.jump{
+    animation: jump 0.4s linear;
+}
+
+@keyframes jump {
+    0%{
+        top: 240px;
+    }
+    30%{
+        top: 180px;
+    }
+    50%{
+        top: 150px;
+    }
+    70%{
+        top: 180px;
+    }
+    80%{
+        top: 220px;
+    }
+    100%{
+        top: 240px;
+    }
+}
